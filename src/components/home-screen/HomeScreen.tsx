@@ -10,6 +10,7 @@ const HomeScreen = () => {
     return (
         <div className={styles.wrapper}>
             <HandIcon />
+            <h1>text</h1>
             <button onClick={() => setActiveQuestion(0)}>start</button>
         </div>
     );
