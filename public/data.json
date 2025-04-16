@@ -1,0 +1,41 @@
+[
+    {
+        "question": "How old your elder brother was 10 years before you was born, mate?",
+        "reward": "$500",
+        "answers": [
+            { "id": "A", "answer": "10 years", "isCorrect": true },
+            { "id": "B", "answer": "11 years", "isCorrect": true },
+            { "id": "C", "answer": "12 years", "isCorrect": true },
+            { "id": "D", "answer": "14 years" }
+        ]
+    },
+    {
+        "question": "What is the smallest positive integer that is divisible by both 6 and 8?",
+        "reward": "$1,000",
+        "answers": [
+            { "id": "A", "answer": "12" },
+            { "id": "B", "answer": "24", "isCorrect": true },
+            { "id": "C", "answer": "48" }
+        ]
+    },
+    {
+        "question": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+        "reward": "$2,000",
+        "answers": [
+            { "id": "A", "answer": "A tree" },
+            { "id": "B", "answer": "A shadow" },
+            { "id": "C", "answer": "An echo", "isCorrect": true },
+            { "id": "D", "answer": "A cloud" }
+        ]
+    },
+    {
+        "question": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?",
+        "reward": "$4,000",
+        "answers": [
+            { "id": "A", "answer": "Yes", "isCorrect": true },
+            { "id": "B", "answer": "No" },
+            { "id": "C", "answer": "Only on Tuesdays" },
+            { "id": "D", "answer": "Depends on the color" }
+        ]
+    }
+]
