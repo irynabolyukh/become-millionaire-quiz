@@ -4,9 +4,9 @@ import { useQuizContext } from '@/contexts/quiz-context-provider';
 import AnswerButton from '@/components/quiz/question-screen/question-step/answer-button';
 const Question = () => {
     const { data, activeQuestion } = useQuizContext();
-    if (activeQuestion === null) return;
-
     const [disableButton, setDisableButton] = useState<boolean>(false);
+
+    if (activeQuestion === null) return;
 
     return (
         <div>

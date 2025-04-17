@@ -6,9 +6,9 @@ import styles from './styles.module.css';
 
 const AnswerButton = ({ answer, disableButton, setDisableButton }: AnswerButtonProps) => {
     const { activeQuestion, setActiveQuestion, setFinished, data } = useQuizContext();
-    if (activeQuestion === null) return;
-
     const [status, setStatus] = useState<ButtonStatus>('idle');
+
+    if (activeQuestion === null) return;
 
     const goToNextStep = () => {
         if (answer.isCorrect) {
