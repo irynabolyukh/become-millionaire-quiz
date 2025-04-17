@@ -47,8 +47,7 @@
 }
 
 .rewardsWrapper {
-    padding-left: var(--reward-line);
-    padding-right: var(--reward-line);
+    padding: 16px var(--reward-line);
     position: relative;
     overflow: hidden;
     min-height: 100vh;
