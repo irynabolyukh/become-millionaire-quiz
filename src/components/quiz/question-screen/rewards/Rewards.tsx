@@ -1,11 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { CloseIcon, MenuIcon } from '@/icons';
-const RewardList = dynamic(() => import('@/components/quiz/question-screen/rewards/rewards-list/RewardsList'), {
-    ssr: false,
-});
+import RewardsList from '@/components/quiz/question-screen/rewards/rewards-list/RewardsList';
 import styles from './styles.module.css';
 const Rewards = () => {
     const isTablet = useMediaQuery('(max-width: 768px)');
@@ -13,7 +10,7 @@ const Rewards = () => {
     return (
         <>
             {!isTablet ? (
-                <RewardList />
+                <RewardsList />
             ) : (
                 <div className={styles.menuWrapper}>
                     <div className={styles.menuTopWrapper}>
@@ -21,7 +18,7 @@ const Rewards = () => {
                             {showRewards ? <CloseIcon /> : <MenuIcon />}
                         </button>
                     </div>
-                    {showRewards && <RewardList />}
+                    {showRewards && <RewardsList />}
                 </div>
             )}
         </>

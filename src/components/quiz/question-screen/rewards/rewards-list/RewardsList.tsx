@@ -10,7 +10,7 @@ const RewardsList = () => {
             <div className={styles.rewardsItems}>
                 {data.map((i) => (
                     <div
-                        className={i.reward.toString() == rewardCollected ? styles.rewardActive : styles.reward}
+                        className={`${styles.rewardItem} ${i.reward === rewardCollected ? styles.selected : ''}`}
                         key={i.reward}
                     >
                         {i.reward}

@@ -3,6 +3,7 @@ import { createContext, FC, useEffect, useState } from 'react';
 import { useContextWithCheck } from '@/utils/helper';
 import { QuizProviderProps, QuizContextProps } from '@/contexts/quiz-context-provider/index';
 import { LOCAL } from '@/consts/localStorage';
+import Loading from '@/components/loading/Loading';
 
 const QuizContext = createContext<QuizContextProps | undefined>(undefined);
 
@@ -44,7 +45,14 @@ const QuizProvider: FC<QuizProviderProps> = ({ data, children }) => {
     };
 
     if (loading) {
-        return <div style={{ minHeight: '100vh' }}>Loading quiz...</div>;
+        return (
+            <Loading
+                customStyle={{
+                    width: '100%',
+                    minHeight: '100vh',
+                }}
+            />
+        );
     }
 
     return (

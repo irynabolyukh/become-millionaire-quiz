@@ -4,8 +4,8 @@
         "reward": "$500",
         "answers": [
             { "id": "A", "answer": "10 years", "isCorrect": true },
-            { "id": "B", "answer": "11 years", "isCorrect": true },
-            { "id": "C", "answer": "12 years", "isCorrect": true },
+            { "id": "B", "answer": "11 years" },
+            { "id": "C", "answer": "12 years" },
             { "id": "D", "answer": "14 years" }
         ]
     },
@@ -36,6 +36,85 @@
             { "id": "B", "answer": "No" },
             { "id": "C", "answer": "Only on Tuesdays" },
             { "id": "D", "answer": "Depends on the color" }
+        ]
+    },
+    {
+        "question": "If you travel back in time and prevent your own birth, what happens to you?",
+        "reward": "$8,000",
+        "answers": [
+            { "id": "A", "answer": "You cease to exist", "isCorrect": true },
+            { "id": "B", "answer": "A parallel universe is created" },
+            { "id": "C", "answer": "Nothing, time is immutable" },
+            { "id": "D", "answer": "You become your own ancestor" }
+        ]
+    },
+    {
+        "question": "If 3 cats catch 3 mice in 3 minutes, how many cats would it take to catch 100 mice in 100 minutes?",
+        "reward": "$16,000",
+        "answers": [
+            { "id": "A", "answer": "3", "isCorrect": true },
+            { "id": "B", "answer": "100" },
+            { "id": "C", "answer": "33" },
+            { "id": "D", "answer": "300" }
+        ]
+    },
+    {
+        "question": "The more you take, the more you leave behind. What am I?",
+        "reward": "$32,000",
+        "answers": [
+            { "id": "A", "answer": "Time", "isCorrect": true },
+            { "id": "B", "answer": "Footsteps", "isCorrect": true },
+            { "id": "C", "answer": "Breath" },
+            { "id": "D", "answer": "Photographs" }
+        ]
+    },
+    {
+        "question": "A man lives on the 10th floor but takes the elevator to the 6th floor and walks up the rest. Why?",
+        "reward": "$64,000",
+        "answers": [
+            { "id": "A", "answer": "He's afraid of heights" },
+            { "id": "B", "answer": "The elevator is broken" },
+            { "id": "C", "answer": "He's too short to reach button 10", "isCorrect": true },
+            { "id": "D", "answer": "He likes exercise" }
+        ]
+    },
+    {
+        "question": "Which word in the dictionary is always spelled incorrectly?",
+        "reward": "$125,000",
+        "answers": [
+            { "id": "A", "answer": "Misspelled" },
+            { "id": "B", "answer": "Incorrectly", "isCorrect": true },
+            { "id": "C", "answer": "Wrong" },
+            { "id": "D", "answer": "Right" }
+        ]
+    },
+    {
+        "question": "What can you hold without ever touching it?",
+        "reward": "$250,000",
+        "answers": [
+            { "id": "A", "answer": "Your breath", "isCorrect": true },
+            { "id": "B", "answer": "A thought" },
+            { "id": "C", "answer": "A promise" },
+            { "id": "D", "answer": "A shadow" }
+        ]
+    },
+    {
+        "question": "This statement is false. Is the previous statement true or false?",
+        "reward": "$500,000",
+        "answers": [
+            { "id": "A", "answer": "True" },
+            { "id": "C", "answer": "Both true and false" },
+            { "id": "D", "answer": "It's a paradox", "isCorrect": true }
+        ]
+    },
+    {
+        "question": "If you divide 30 by half and add 10, what do you get?",
+        "reward": "$1,000,000",
+        "answers": [
+            { "id": "A", "answer": "25" },
+            { "id": "B", "answer": "50" },
+            { "id": "C", "answer": "70", "isCorrect": true },
+            { "id": "D", "answer": "100" }
         ]
     }
 ]

@@ -54,7 +54,7 @@ const AnswerButton = ({ answer, disableButton, setDisableButton }: AnswerButtonP
             }`}
             onClick={handleClick}
         >
-            {answer.id} {answer.answer}
+            <span>{answer.id}</span> {answer.answer}
         </button>
     );
 };

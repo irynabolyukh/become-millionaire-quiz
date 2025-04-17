@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 32px;
-    grid-column-gap: 34px;
+    grid-column-gap: 30px;
 }
 
 @media (max-width: 768px) {
@@ -26,6 +26,12 @@
     .questionStepAnswers {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 8px;
+        width: 100%;
+    }
+    .questionStepWrapper {
+        width: 100%;
+        align-items: center;
+        gap: 20vh;
     }
 }
 
