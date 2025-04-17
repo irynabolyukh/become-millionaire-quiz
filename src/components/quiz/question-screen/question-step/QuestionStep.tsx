@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useQuizContext } from '@/contexts/quiz-context-provider';
 import AnswerButton from '@/components/quiz/question-screen/question-step/answer-button';
+import styles from './styles.module.css';
 const Question = () => {
     const { data, activeQuestion } = useQuizContext();
     const [disableButton, setDisableButton] = useState<boolean>(false);
@@ -9,9 +10,9 @@ const Question = () => {
     if (activeQuestion === null) return;
 
     return (
-        <div>
-            <p>{data[activeQuestion].question}</p>
-            <div>
+        <div className={styles.questionStepWrapper}>
+            <h2>{data[activeQuestion].question}</h2>
+            <div className={styles.questionStepAnswers}>
                 {data[activeQuestion].answers.map((a) => (
                     <AnswerButton
                         key={a.id}

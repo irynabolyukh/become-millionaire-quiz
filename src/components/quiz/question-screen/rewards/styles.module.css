@@ -1,13 +1,17 @@
-.rewardActive {
-    color: var(--orange-100);
+.menuWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: var(--black-5);
+}
+.menuWrapper button {
+    width: fit-content;
+    cursor: pointer;
 }
 
-.reward {
-    color: var(--black-100);
-}
-
-.rewardsWrapper {
+.menuTopWrapper {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    justify-content: flex-end;
+    padding: 16px;
 }

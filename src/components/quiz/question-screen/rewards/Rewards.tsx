@@ -1,21 +1,30 @@
 'use client';
-import React from 'react';
-import { useQuizContext } from '@/contexts/quiz-context-provider';
+import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
+import useMediaQuery from '@/hooks/useMediaQuery';
+import { CloseIcon, MenuIcon } from '@/icons';
+const RewardList = dynamic(() => import('@/components/quiz/question-screen/rewards/rewards-list/RewardsList'), {
+    ssr: false,
+});
 import styles from './styles.module.css';
 const Rewards = () => {
-    const { data, rewardCollected } = useQuizContext();
-
+    const isTablet = useMediaQuery('(max-width: 768px)');
+    const [showRewards, setShowRewards] = useState(false);
     return (
-        <div className={styles.rewardsWrapper}>
-            {data.map((i) => (
-                <div
-                    className={i.reward.toString() == rewardCollected ? styles.rewardActive : styles.reward}
-                    key={i.reward}
-                >
-                    {i.reward}
+        <>
+            {!isTablet ? (
+                <RewardList />
+            ) : (
+                <div className={styles.menuWrapper}>
+                    <div className={styles.menuTopWrapper}>
+                        <button onClick={() => setShowRewards(!showRewards)}>
+                            {showRewards ? <CloseIcon /> : <MenuIcon />}
+                        </button>
+                    </div>
+                    {showRewards && <RewardList />}
                 </div>
-            ))}
-        </div>
+            )}
+        </>
     );
 };
 

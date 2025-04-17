@@ -1,0 +1,31 @@
+.rewardActive {
+    color: var(--orange-100);
+}
+
+.reward {
+    color: var(--black-100);
+}
+
+.rewardsWrapper {
+    min-height: 100vh;
+    background: var(--white-100);
+    min-width: 30%;
+}
+
+.rewardsItems {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .rewardsWrapper {
+        background: transparent;
+    }
+    .rewardsItems {
+        min-height: auto;
+    }
+}
