@@ -8,6 +8,7 @@ export type QuizContextProps = {
     setFinished: (tab: boolean) => void;
     setRewardCollected: (tab: string | number) => void;
     data: Question[];
+    tryAgain: () => void;
 } & Quiz;
 
 export type QuizProviderProps = {

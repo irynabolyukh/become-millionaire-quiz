@@ -1,0 +1,28 @@
+.answerButton.selected {
+    border: 1px solid var(--orange-100);
+    background: var(--orange-5);
+}
+
+.answerButton.correct {
+    border: 1px solid var(--green-100) !important;
+    background: var(--green-5);
+}
+
+.answerButton.wrong {
+    border: 1px solid var(--red-100) !important;
+    background: var(--red-5);
+}
+
+.answerButton {
+    cursor: pointer;
+    border: 1px solid var(--black-40);
+    transition: border 300ms ease;
+}
+
+.answerButton:hover{
+    border: 1px solid var(--orange-100);
+}
+
+.answerButton:disabled{
+    color: var(--black-100);
+}

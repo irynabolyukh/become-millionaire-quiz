@@ -2,11 +2,11 @@
 import React from 'react';
 import { useQuizContext } from '@/contexts/quiz-context-provider';
 const Question = () => {
-    const { rewardCollected, setFinished } = useQuizContext();
+    const { rewardCollected, tryAgain } = useQuizContext();
     return (
         <div>
             <p>{rewardCollected}</p>
-            <button onClick={() => setFinished(false)}>Try Again</button>
+            <button onClick={tryAgain}>Try Again</button>
         </div>
     );
 };

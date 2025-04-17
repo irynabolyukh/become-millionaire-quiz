@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import Rewards from '@/components/quiz/rewards/Rewards';
+import Rewards from '@/components/quiz/question-screen/rewards/Rewards';
 import styles from './styles.module.css';
-import QuestionStep from '@/components/quiz/question-step/QuestionStep';
+import QuestionStep from '@/components/quiz/question-screen/question-step/QuestionStep';
 
 const Question = () => {
     return (
